@@ -490,8 +490,9 @@
 
         <div class="row">
           <div class="col-md-10 mx-auto">
-            <form method="GET"
-              action="mailto:abhigrover93@gmail.com?subject=Blesssings%20from%20freinds%20and%20relatives!">
+            <form method="POST" name="testForm"
+              action="mailto:abhigrover93@gmail.com?subject=Blesssings%20from%20freinds%20and%20relatives!&body="
+              onsubmit="return addActionTest(this);">
               <div class="form-group row">
                 <div class="col-sm-6">
                   <label for="inputFirstname">First Name</label>
@@ -550,6 +551,16 @@
         var first = document.getElementById('inputFirstname');
         var last = document.getElementById('inputLastname');
 
+      }
+      function addActionTest(theForm) {
+        if (theForm.body.value != '') {
+
+          theForm.action += theForm.body.value;
+          return true;
+
+        }
+
+        else { alert('Error'); return false; }
       } 
     </script>
 </body>
