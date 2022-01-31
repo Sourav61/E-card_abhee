@@ -45,7 +45,20 @@
       cursor: pointer;
     }
 
+    .iframe {
+      width: 100%;
+      height: 100%
+    }
 
+    .present {
+      margin-top: 14%;
+    }
+
+    .colo {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
 
     .navbar-nav {
       font-family: 'Dancing Script', cursive;
@@ -81,6 +94,22 @@
         margin-bottom: 1rem;
       }
 
+      .iframe {
+        width: 300px;
+        height: 300px;
+      }
+
+      .present {
+        margin-top: 51%;
+      }
+
+      .colo {
+        flex-basis: 600px !important;
+        flex-grow: 1 !important;
+        max-width: 90% !important;
+        margin-left: 5% !important;
+      }
+
     }
 
     .button5 {
@@ -105,8 +134,9 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"
+      style="background-color: white;">
+      <span class="navbar-toggler-icon" style="background-color: white;"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -293,7 +323,7 @@
     <div class="container-fluid" id="story">
       <div class="row">
         <div class="col">
-          <iframe width="603" height="360" src="videos/pre wedding final video.mp4" frameborder="0"
+          <iframe class="iframe" src="videos/pre wedding final video.mp4" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -398,7 +428,7 @@
       <div class="col-md-3" style="margin-top: 1.5%;">
         <div class="card shadow" style="width: 20rem; max-height: 20rem;">
           <div class="inner">
-            <a href="images/DSC07339.JPG" data-lightbox="mygallery"> <img src="images/DSC07339.JPG" class="card-img-top"
+            <a href="images/DSC07344.JPG" data-lightbox="mygallery"> <img src="images/DSC07344.JPG" class="card-img-top"
                 alt="..." width="100%" height="500px"></a>
           </div>
 
@@ -407,7 +437,7 @@
 
     </div>
   </div>
-  <div style="margin-top: 14%;">
+  <div class="present">
     <center>
       <h1 style="color: rgb(9, 56, 3);" id="invitation">
         Your presence matters!</h1>
@@ -416,7 +446,7 @@
   <div class="jumbotron" style="background-color: rgb(230, 150, 150);;">
     <div class="row">
 
-      <div class="col">
+      <div class="colo text">
         <div class="jumbotron" style="background-color: rgb(218, 107, 107);">
           <div class="card">
 
@@ -426,7 +456,8 @@
                   <p style="color: rgb(100, 33, 33);"> We invite you to share the joy with us as the<br> wedding of
                     Abheeshek Grover and Pratibha Pahwa<br> takes place on
                     7th February 2021 at Chandigarh.<br>
-                    We expect you together with your family!<br></p>
+                    <!-- We expect you together with your family!<br></p> -->
+                  </p>
                 </b>
                 <!-- <center><button class="button button5" style="background-color: red;">Join The Live Wedding</button></center> -->
               </div>
@@ -435,7 +466,7 @@
 
         </div>
       </div>
-      <div class="col">
+      <div class="colo">
         <img src="images/marriage.jpg" alt="" width="100%">
       </div>
     </div>
@@ -476,7 +507,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="colo">
         <img src="images/ganesh.jpg" alt="" width="100%">
       </div>
     </div>
