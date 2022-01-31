@@ -490,7 +490,8 @@
 
         <div class="row">
           <div class="col-md-10 mx-auto">
-            <form>
+            <form method="GET"
+              action="mailto:abhigrover93@gmail.com?subject=Blesssings%20from%20freinds%20and%20relatives!">
               <div class="form-group row">
                 <div class="col-sm-6">
                   <label for="inputFirstname">First Name</label>
@@ -501,10 +502,19 @@
                   <input type="text" class="form-control" id="inputLastname" placeholder="Last Name">
                 </div>
               </div>
-              <label for="inputLastname">Send Your Best Wishes...</label>
-              <textarea placeholder="We Loved Your Message..."></textarea>
+              <label>Send Your Best Wishes...</label>
+              <textarea name="body" id="lable" placeholder="We Loved Your Message..."></textarea>
+              <!-- <input type="text" class="form-control" id="inputLastname" placeholder="Last Name"> -->
               <!-- <a href="mailto:sourav61pahwa@gmail.com"> -->
-              <center><button class="button button5" style="background-color:purple;">Send Your Best Wishes</button>
+              <center>
+                <button type="submit" value="Send" class="button button5" style="background-color:purple;"
+                  onclick="myfunc()">
+
+                  <p>Send
+                    Your
+                    Best Wishes</p>
+                </button>
+                <!-- <input type="submit" value="Send" /> -->
               </center>
               <!-- </a> -->
             </form>
@@ -535,6 +545,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function myfunc() {
+        var first = document.getElementById('inputFirstname');
+        var last = document.getElementById('inputLastname');
+
+      } 
+    </script>
 </body>
 
 </html>
